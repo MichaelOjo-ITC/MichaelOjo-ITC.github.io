@@ -2,6 +2,10 @@ article{
     background-color:#FFECB3;
     color: #333;
     font-size: 16px;
+    p{
+        line-height: 1.5;
+        font-style: italic;
+    }
 }
 article.featured{
     background-color: #FFD54F;
