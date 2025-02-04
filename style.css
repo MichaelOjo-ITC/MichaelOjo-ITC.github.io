@@ -3,4 +3,10 @@ article{
     color: #333;
     font-size: 16px;
 }
+article.featured{
+    background-color: #FFD54F;
+    font-weight: bold;
+    border: 2px solid #FFA000;
+}
+
     
