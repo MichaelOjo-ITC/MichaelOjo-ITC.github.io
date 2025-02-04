@@ -12,7 +12,7 @@ article.featured{
     font-weight: bold;
     border: 2px solid #FFA000;
 }
-article.featured :hover{
+article:hover{
     background-color: #FFB300;
 }
 
