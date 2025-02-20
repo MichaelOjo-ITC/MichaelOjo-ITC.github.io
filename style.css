@@ -1,99 +1,78 @@
-* {
+/* General Styles */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
     background-color: #121212;
-    color: #fff;
+    color: #ffffff;
+    display: flex;
 }
 
-nav {
+/* Sidebar Navigation */
+.sidebar {
+    width: 250px;
+    background-color: #1e1e2e;
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #1e1e1e;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
 }
 
-nav ul {
-    list-style: none;
-    padding-left: 20px;
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    margin: 20px 0;
+.sidebar nav ul li {
+    padding: 15px;
 }
 
-nav ul li a {
+.sidebar nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: #fff;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
 }
 
-nav ul li a:hover {
-    color: #1e90ff;
+.sidebar nav ul li a:hover, .sidebar nav ul li.active a {
+    color: #4a90e2;
 }
 
-nav ul li a.active {
-    color: #1e90ff;
-}
-
-section {
-    margin-left: 220px;
+/* Main Content */
+.content {
+    margin-left: 270px;
     padding: 20px;
+    flex-grow: 1;
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    color: #4a90e2;
 }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.home img {
-    width: 100%;
-    height: auto;
-}
-
-.hobby-item {
+/* Hobby Gallery */
+.gallery {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.hobby-item img {
-    width: 150px;
-    height: 150px;
-    margin-right: 20px;
-}
-
-.hobbies {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-@media (max-width: 768px) {
-    nav {
-        width: 150px;
-    }
-    section {
-        margin-left: 160px;
-    }
-    .hobbies {
-        grid-template-columns: 1fr;
-    }
+.hobby {
+    text-align: center;
+}
+
+.hobby img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hobby img:hover {
+    transform: scale(1.05);
 }
