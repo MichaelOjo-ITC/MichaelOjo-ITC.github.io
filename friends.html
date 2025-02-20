@@ -1,3 +1,4 @@
+<!-- hobbies.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,28 +8,23 @@
     <link rel="stylesheet" href="common_style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="friends.html" class="active">Hobbies</a></li>
-        </ul>
-    </nav>
-    <section class="hobbies">
+    <div class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="aboutme.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="blog.html"><i class="fas fa-pen"></i> Blog</a></li>
+                <li class="active"><a href="hobbies.html"><i class="fas fa-camera"></i> Hobbies</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
         <h1>My Hobbies</h1>
-        <div class="hobby-item">
-            <img src="phone-image.jpg" alt="Phone Repair">
-            <p>Fixing and Reselling Phones</p>
+        <div class="gallery">
+            <div class="hobby"><img src="fixing-phones.jpg" alt="Fixing Phones"><p>Fixing and reselling phones</p></div>
+            <div class="hobby"><img src="drones.jpg" alt="Flying Drones"><p>Flying DJI and FPV drones</p></div>
+            <div class="hobby"><img src="lifting.jpg" alt="Lifting Weights"><p>Lifting weights</p></div>
         </div>
-        <div class="hobby-item">
-            <img src="drone-image.jpg" alt="Flying Drones">
-            <p>Flying DJI and FPV Drones</p>
-        </div>
-        <div class="hobby-item">
-            <img src="weights-image.jpg" alt="Lifting Weights">
-            <p>Lifting Weights</p>
-        </div>
-    </section>
+    </div>
 </body>
 </html>
