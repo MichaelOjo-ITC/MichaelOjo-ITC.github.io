@@ -49,4 +49,16 @@ body {
     border-radius: 50%;
 }
 
+main {
+    margin-left: 220px;  /* Space for the navbar (adjust width) */
+    padding: 20px;
+    overflow-x: hidden;  /* Prevents horizontal scrolling if content overflows */
+}
 
+/* Common Styles for Hobby Images */
+.hobby-grid .hobby-item img {
+    width: 250px; /* Adjust the width as needed */
+    height: 250px; /* Adjust the height to match the width */
+    object-fit: cover; /* Ensures the images cover the box without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
