@@ -1,3 +1,30 @@
+/* Task 1: Basic Styling for all articles */
+article {
+  background-color: #FFECB3;
+  font-size: 16px;
+  color: #333;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Task 2: Featured-article overrides */
+article.featured {
+  background-color: #FFD54F;
+  font-weight: bold;
+  border: 2px solid #FFA000;
+}
+
+/* Task 3: Nested styling for paragraphs inside any article */
+article p {
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* Bonus: Hover effect on featured articles */
+article.featured:hover {
+  background-color: #FFB300;
+}
+
 /* General Styles */
 body {
     margin: 0;
